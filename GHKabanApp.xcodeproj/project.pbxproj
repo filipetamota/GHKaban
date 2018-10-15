@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		D46EB73F21740425004D546D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB73E21740425004D546D /* AppDelegate.swift */; };
-		D46EB74121740425004D546D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB74021740425004D546D /* FirstViewController.swift */; };
-		D46EB74321740425004D546D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB74221740425004D546D /* SecondViewController.swift */; };
+		D46EB74121740425004D546D /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB74021740425004D546D /* ExploreViewController.swift */; };
+		D46EB74321740425004D546D /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB74221740425004D546D /* LocalViewController.swift */; };
 		D46EB74621740425004D546D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46EB74421740425004D546D /* Main.storyboard */; };
 		D46EB74821740425004D546D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46EB74721740425004D546D /* Assets.xcassets */; };
 		D46EB74B21740425004D546D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46EB74921740425004D546D /* LaunchScreen.storyboard */; };
+		D46EB763217406FA004D546D /* DoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB75E217406F9004D546D /* DoingViewController.swift */; };
+		D46EB764217406FA004D546D /* BacklogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB75F217406F9004D546D /* BacklogViewController.swift */; };
+		D46EB765217406FA004D546D /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB760217406FA004D546D /* NextViewController.swift */; };
+		D46EB766217406FA004D546D /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB761217406FA004D546D /* DoneViewController.swift */; };
+		D46EB767217406FA004D546D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB762217406FA004D546D /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D46EB73B21740425004D546D /* GHKabanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHKabanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46EB73E21740425004D546D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D46EB74021740425004D546D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D46EB74221740425004D546D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D46EB74021740425004D546D /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		D46EB74221740425004D546D /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
 		D46EB74521740425004D546D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D46EB74721740425004D546D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D46EB74A21740425004D546D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D46EB74C21740425004D546D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D46EB75E217406F9004D546D /* DoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoingViewController.swift; sourceTree = "<group>"; };
+		D46EB75F217406F9004D546D /* BacklogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BacklogViewController.swift; sourceTree = "<group>"; };
+		D46EB760217406FA004D546D /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		D46EB761217406FA004D546D /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		D46EB762217406FA004D546D /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				D46EB73E21740425004D546D /* AppDelegate.swift */,
-				D46EB74021740425004D546D /* FirstViewController.swift */,
-				D46EB74221740425004D546D /* SecondViewController.swift */,
+				D46EB74021740425004D546D /* ExploreViewController.swift */,
+				D46EB74221740425004D546D /* LocalViewController.swift */,
+				D46EB75F217406F9004D546D /* BacklogViewController.swift */,
+				D46EB75E217406F9004D546D /* DoingViewController.swift */,
+				D46EB761217406FA004D546D /* DoneViewController.swift */,
+				D46EB760217406FA004D546D /* NextViewController.swift */,
+				D46EB762217406FA004D546D /* PageViewController.swift */,
 				D46EB74421740425004D546D /* Main.storyboard */,
 				D46EB74721740425004D546D /* Assets.xcassets */,
 				D46EB74921740425004D546D /* LaunchScreen.storyboard */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D46EB74321740425004D546D /* SecondViewController.swift in Sources */,
+				D46EB766217406FA004D546D /* DoneViewController.swift in Sources */,
+				D46EB763217406FA004D546D /* DoingViewController.swift in Sources */,
+				D46EB765217406FA004D546D /* NextViewController.swift in Sources */,
+				D46EB74321740425004D546D /* LocalViewController.swift in Sources */,
+				D46EB764217406FA004D546D /* BacklogViewController.swift in Sources */,
 				D46EB73F21740425004D546D /* AppDelegate.swift in Sources */,
-				D46EB74121740425004D546D /* FirstViewController.swift in Sources */,
+				D46EB74121740425004D546D /* ExploreViewController.swift in Sources */,
+				D46EB767217406FA004D546D /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
