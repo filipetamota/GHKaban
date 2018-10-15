@@ -11,6 +11,11 @@ import UIKit
 
 class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
+    var backlog_issues: [Issue] = [Issue]()
+    var next_issues: [Issue] = [Issue]()
+    var doing_issues: [Issue] = [Issue]()
+    var done_issues: [Issue] = [Issue]()
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = pageViewControllers.firstIndex(of: viewController) else {
             return nil
@@ -52,6 +57,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     //set is private, but get is public
     //lazy so it's not calculated until the first time is used, so the func newViewController will be called before
     private(set) lazy var pageViewControllers: [UIViewController] = {
+        
         return [self.newViewController(key: "Backlog"),
                 self.newViewController(key: "Next"),
                 self.newViewController(key: "Doing"),
@@ -59,19 +65,25 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     }()
     
     private func newViewController(key: String) -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(key)ViewController")
+        
+        let controller: IssuesViewController =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IssuesViewController") as! IssuesViewController
+        controller.type = key
+        return controller
     }
     
+    
+    //TODO: get issues and pass them to the page view controllers
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dataSource = self
-        
         if let firstViewController = pageViewControllers.first {
             setViewControllers([firstViewController],
                                direction: .forward,
                                animated: true,
                                completion: nil)
         }
+        
     }
+
 }

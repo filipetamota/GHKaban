@@ -13,11 +13,13 @@
 		D46EB74621740425004D546D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46EB74421740425004D546D /* Main.storyboard */; };
 		D46EB74821740425004D546D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46EB74721740425004D546D /* Assets.xcassets */; };
 		D46EB74B21740425004D546D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46EB74921740425004D546D /* LaunchScreen.storyboard */; };
-		D46EB763217406FA004D546D /* DoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB75E217406F9004D546D /* DoingViewController.swift */; };
-		D46EB764217406FA004D546D /* BacklogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB75F217406F9004D546D /* BacklogViewController.swift */; };
-		D46EB765217406FA004D546D /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB760217406FA004D546D /* NextViewController.swift */; };
-		D46EB766217406FA004D546D /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB761217406FA004D546D /* DoneViewController.swift */; };
+		D46EB764217406FA004D546D /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB75F217406F9004D546D /* IssuesViewController.swift */; };
 		D46EB767217406FA004D546D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB762217406FA004D546D /* PageViewController.swift */; };
+		D46EB76C21741798004D546D /* KabanRepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB76821741798004D546D /* KabanRepoTableViewCell.swift */; };
+		D46EB76D21741798004D546D /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB76921741798004D546D /* RepoTableViewCell.swift */; };
+		D46EB76E21741798004D546D /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB76A21741798004D546D /* Repo.swift */; };
+		D46EB76F21741798004D546D /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB76B21741798004D546D /* Issue.swift */; };
+		D46EB771217430D2004D546D /* IssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EB770217430D2004D546D /* IssueTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +31,13 @@
 		D46EB74721740425004D546D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D46EB74A21740425004D546D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D46EB74C21740425004D546D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D46EB75E217406F9004D546D /* DoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoingViewController.swift; sourceTree = "<group>"; };
-		D46EB75F217406F9004D546D /* BacklogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BacklogViewController.swift; sourceTree = "<group>"; };
-		D46EB760217406FA004D546D /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
-		D46EB761217406FA004D546D /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		D46EB75F217406F9004D546D /* IssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
 		D46EB762217406FA004D546D /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		D46EB76821741798004D546D /* KabanRepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KabanRepoTableViewCell.swift; sourceTree = "<group>"; };
+		D46EB76921741798004D546D /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		D46EB76A21741798004D546D /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		D46EB76B21741798004D546D /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		D46EB770217430D2004D546D /* IssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +73,13 @@
 				D46EB73E21740425004D546D /* AppDelegate.swift */,
 				D46EB74021740425004D546D /* ExploreViewController.swift */,
 				D46EB74221740425004D546D /* LocalViewController.swift */,
-				D46EB75F217406F9004D546D /* BacklogViewController.swift */,
-				D46EB75E217406F9004D546D /* DoingViewController.swift */,
-				D46EB761217406FA004D546D /* DoneViewController.swift */,
-				D46EB760217406FA004D546D /* NextViewController.swift */,
 				D46EB762217406FA004D546D /* PageViewController.swift */,
+				D46EB75F217406F9004D546D /* IssuesViewController.swift */,
+				D46EB76B21741798004D546D /* Issue.swift */,
+				D46EB76A21741798004D546D /* Repo.swift */,
+				D46EB76821741798004D546D /* KabanRepoTableViewCell.swift */,
+				D46EB76921741798004D546D /* RepoTableViewCell.swift */,
+				D46EB770217430D2004D546D /* IssueTableViewCell.swift */,
 				D46EB74421740425004D546D /* Main.storyboard */,
 				D46EB74721740425004D546D /* Assets.xcassets */,
 				D46EB74921740425004D546D /* LaunchScreen.storyboard */,
@@ -153,14 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D46EB766217406FA004D546D /* DoneViewController.swift in Sources */,
-				D46EB763217406FA004D546D /* DoingViewController.swift in Sources */,
-				D46EB765217406FA004D546D /* NextViewController.swift in Sources */,
+				D46EB76E21741798004D546D /* Repo.swift in Sources */,
+				D46EB76C21741798004D546D /* KabanRepoTableViewCell.swift in Sources */,
+				D46EB771217430D2004D546D /* IssueTableViewCell.swift in Sources */,
+				D46EB76D21741798004D546D /* RepoTableViewCell.swift in Sources */,
 				D46EB74321740425004D546D /* LocalViewController.swift in Sources */,
-				D46EB764217406FA004D546D /* BacklogViewController.swift in Sources */,
+				D46EB764217406FA004D546D /* IssuesViewController.swift in Sources */,
 				D46EB73F21740425004D546D /* AppDelegate.swift in Sources */,
 				D46EB74121740425004D546D /* ExploreViewController.swift in Sources */,
 				D46EB767217406FA004D546D /* PageViewController.swift in Sources */,
+				D46EB76F21741798004D546D /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
