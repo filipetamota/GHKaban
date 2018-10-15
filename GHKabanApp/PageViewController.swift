@@ -62,7 +62,6 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(key)ViewController")
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -75,6 +74,4 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
                                completion: nil)
         }
     }
-    
-
 }
